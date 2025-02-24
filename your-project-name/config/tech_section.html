@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .tech-section {
+    display: flex;
+    padding: 5rem 8rem ;
+    background-color: #fff;
+    gap: 3.8rem;
+    align-items: center;
+  }
+
+  .tech-image {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .tech-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+  }
+
+  .tech-content {
+    flex: 1;
+    max-width: 50%;
+    padding-left: 25px;
+  }
+
+  .tech-tag {
+    color: #a57373;
+    font-size: 1.23rem;
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+  }
+
+  .tech-title {
+    font-size: 2.5rem;
+    color: #1E1E1E;
+    font-weight: 700;
+    margin-bottom: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .tech-description {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    align-content: flex-start;
+    text-align: justify;
+    width: 60%;
+  }
+
+  .tech-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+  }
+
+  .tech-features li {
+    color: #4A4A4A;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .tech-features li::before {
+    content: "•";
+    color: #666;
+    font-size: 1.5rem;
+  }
+
+  .discover-btn {
+    background-color: #6366F1;
+    color: white;
+    padding: 0.8rem 2.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .discover-btn:hover {
+    background-color: #4F46E5;
+  }
+
+  .highlight {
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .tech-section {
+      flex-direction: column;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .tech-image, 
+    .tech-content {
+      max-width: 100%;
+    }
+
+    .tech-title {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <section class="tech-section">
+    <div class="tech-image">
+      <img src="D:\mockupsign\your-project-name\resources\techimage.PNG" alt="Cloud Technology App Interface">
+    </div>
+    <div class="tech-content">
+      <div class="tech-tag">Tech that transforms</div>
+      <h1 class="tech-title">Taking cloud technology to the next level</h1>
+      <p class="tech-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus massa id augue lacinia venenatis. Etiam ultricies convallis neque..
+      </p>
+      <ul class="tech-features">
+        <li>Keeping the standards of cloud systems high.</li>
+        <li>Bringing <span class="highlight">cloud services</span> to your workplace</li>
+        <li>The President Buys Software.</li>
+        <li>Cloud management has never been easy like this.</li>
+      </ul>
+      <button class="discover-btn">Discover More</button>
+    </div>
+  </section>
+</body>
+</html>

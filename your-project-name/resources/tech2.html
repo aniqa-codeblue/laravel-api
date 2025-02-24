@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.platform-section {
+    padding: 6rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.platform-container {
+    display: flex;
+    gap: 6rem;
+    align-items: flex-start;
+}
+
+.platform-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.platform-visual {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 50px;
+}
+
+.section-tag {
+    color: #FF6B6B;
+    font-size: 1.2rem;
+}
+
+.section-title {
+    color: #1A1A2E;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    width: 24px;
+    height: 24px;
+    color: #4361EE;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-title {
+    color: #1A1A2E;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.feature-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+.first-two-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.circular-chart {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.circular-chart-div {
+    width: 250px;
+    height: 200;
+}
+
+.happy-customers {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.happy-customers-div {
+    width: 250px;
+    height: 200;
+}
+
+.analytics-chart-div {
+    width: 500px;
+    height: 350px;
+}
+
+.analytics-chart {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.image-container {
+    width: 70%;
+    height: 70%;
+    border-radius: 100px;
+    border-color: none;
+    background-color: pink;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .platform-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .platform-content {
+        max-width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<section class="platform-section">
+    <div class="platform-container">
+        <div class="platform-content">
+            <div class="section-tag">Variations that capture</div>
+            <h2 class="section-title">A complete platform to transform data into insights</h2>
+            
+            <div class="feature-list">
+                <div class="feature-item">
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                    </svg>
+                    <div class="feature-text">
+                        <h3 class="feature-title">We drive results, not reasons</h3>
+                        <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis scelerisque nelemementum massa labortin.</p>
+                    </div>
+                </div>
+                
+                <div class="feature-item">
+                    <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <div class="feature-text">
+                        <h3 class="feature-title">Keeping the quality of cloud really high</h3>
+                        <p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis scelerisque nelemementum massa labortin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="platform-visual">
+            <div class="image-container">
+                <!-- Background box for alignment effect -->
+                <div class="background-box">
+                <div class="images-on-right">
+                    <div class="first-two-images">
+                        <div class="circular-chart-div">
+                            <!-- Circular Chart Image -->
+                        <img src="D:\mockupsign\your-project-name\resources\circularchart.webp" alt="Sales Goals" class="circular-chart">
+                        </div>
+                        <div class="happy-customers-div">
+                        <!-- Happy Customers Image -->
+                        <img src="D:\mockupsign\your-project-name\resources\happycustomers.webp" alt="Happy Customers" class="happy-customers">
+                        </div>
+                    </div>
+                    <div class="analytics-chart-div">
+                        <!-- Analytics Chart Image -->
+                        <img src="D:\mockupsign\your-project-name\resources\charts.webp" alt="Analytics Data" class="analytics-chart">
+                    </div>
+                </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
